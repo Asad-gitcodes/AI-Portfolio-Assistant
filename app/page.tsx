@@ -16,11 +16,29 @@ export default function Home() {
       ></div>
 
       {/* Floating tech icons */}
-      <div className="absolute top-40 right-20 animate-float opacity-20">
+      <div className="absolute top-40 right-20 animate-float opacity-30">
         <div className="text-6xl">⚡</div>
       </div>
-      <div className="absolute bottom-40 left-20 animate-float-delayed opacity-20">
+      <div className="absolute bottom-40 left-20 animate-float-delayed opacity-30">
         <div className="text-6xl">🚀</div>
+      </div>
+      <div
+        className="absolute top-1/3 right-32 animate-float opacity-25"
+        style={{ animationDelay: "0.5s" }}
+      >
+        <div className="text-5xl">💻</div>
+      </div>
+      <div
+        className="absolute top-2/3 left-32 animate-float-delayed opacity-25"
+        style={{ animationDelay: "1.5s" }}
+      >
+        <div className="text-5xl">🧠</div>
+      </div>
+      <div
+        className="absolute bottom-1/3 right-40 animate-float opacity-20"
+        style={{ animationDelay: "2s" }}
+      >
+        <div className="text-5xl">⚙️</div>
       </div>
 
       {/* Header */}
@@ -71,42 +89,97 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-block mb-6">
-            <span className="glass px-6 py-3 rounded-full text-sm font-semibold text-orange-100 border border-orange-500/30 glow-orange">
-              ✨ Powered by Advanced AI
-            </span>
-          </div>
+          <div className="inline-block mb-6"></div>
 
-          <h2 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Meet My <span className="gradient-text">AI Assistant</span>
-          </h2>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-8">
+            {/* Text Section */}
+            <div className="flex-1 text-center lg:text-left">
+              <p className="text-orange-400 font-semibold mb-3">
+                Hello! I’m the
+              </p>
+              <h2 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                <span className="gradient-text">
+                  AI Assistant representing Asad Abdul
+                </span>
+              </h2>
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-            Ask anything about my background, skills, experience, and projects.
-            <br />
-            <span className="text-orange-400 font-semibold">
-              I'm here 24/7 to answer your questions!
-            </span>
-          </p>
+              <p className="text-xl text-gray-300 max-w-2xl mb-6">
+                Ask me anything about his background, technical skills,
+                experience, or projects.
+                <br />
+                <br />
+                <span className="text-orange-400 font-semibold">
+                  I'm here 24/7 to provide clear, professional insights and help
+                  you learn more about him.
+                </span>
+              </p>
 
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-400">
-            <svg
-              className="w-5 h-5 text-orange-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              ></path>
-            </svg>
-            <span>
-              Uses <span className="font-semibold text-orange-400">RAG</span>{" "}
-              for context-aware responses
-            </span>
+              <div className="flex items-center justify-center lg:justify-start gap-2 text-sm text-gray-400">
+                <svg
+                  className="w-5 h-5 text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+                <span>
+                  {" "}
+                  <span className="font-semibold text-orange-400">
+                    powered by GPT-4 & RAG
+                  </span>{" "}
+                  here to guide you through his professional journey.
+                </span>
+              </div>
+            </div>
+
+            {/* Avatar/Character Section */}
+            <div className="flex-1 relative">
+              <div className="relative w-full max-w-md mx-auto">
+                {/* Animated background glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-full blur-3xl animate-pulse-glow"></div>
+
+                {/* Avatar placeholder - Replace with your 3D character */}
+                <div className="relative z-10 flex items-center justify-center">
+                  {/* Tech icons floating around */}
+                  <div className="absolute -top-10 -left-10 text-5xl animate-float opacity-80">
+                    <div className="glass p-3 rounded-2xl border border-orange-500/30">
+                      ⚡
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-10 -right-10 text-5xl animate-float-delayed opacity-80">
+                    <div className="glass p-3 rounded-2xl border border-orange-500/30">
+                      🚀
+                    </div>
+                  </div>
+                  <div
+                    className="absolute top-0 right-0 text-4xl animate-float opacity-80"
+                    style={{ animationDelay: "1s" }}
+                  >
+                    <div className="glass p-2 rounded-xl border border-orange-500/30">
+                      🤖
+                    </div>
+                  </div>
+
+                  {/* Main avatar - Replace this with your image */}
+                  <div className="glass-strong rounded-3xl p-8 border-2 border-orange-500/30 glow-orange">
+                    <div className="w-64 h-64 bg-gradient-to-br from-orange-500/10 to-red-600/10 rounded-2xl flex items-center justify-center">
+                      {/* Placeholder - Replace with: <img src="/your-avatar.png" alt="Avatar" className="w-full h-full object-contain" /> */}
+                      <img
+                        src="/avatar.jpg"
+                        alt="AI Assistant Avatar"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
