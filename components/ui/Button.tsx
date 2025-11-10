@@ -1,5 +1,7 @@
 // components/ui/Button.tsx - Reusable button component
 
+"use client";
+
 import React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -23,9 +25,10 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl",
+      "bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl",
     secondary: "bg-gray-200 hover:bg-gray-300 text-gray-800",
-    outline: "border-2 border-blue-600 text-blue-600 hover:bg-blue-50",
+    outline:
+      "border-2 border-orange-500 text-orange-500 hover:bg-orange-50/10 hover:text-orange-400",
   };
 
   const sizes = {
