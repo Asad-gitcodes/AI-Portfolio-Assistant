@@ -1,4 +1,4 @@
-// lib/ai/rag.ts - Retrieval-Augmented Generation system
+// lib/ai/rag.ts - Retrieval-Augmented Generation system (FIXED VERSION)
 
 import { Profile, EmbeddingChunk, RetrievalResult } from '@/types';
 import { generateEmbedding, cosineSimilarity } from './openai';
@@ -6,60 +6,134 @@ import { getCollection, COLLECTIONS } from '../db/mongodb';
 import profileData from '@/data/profile.json';
 
 /**
- * Prepare profile data into searchable text chunks
+ * Prepare profile data into searchable text chunks (with safe array handling)
  */
 export function prepareProfileChunks(profile: Profile): string[] {
   const chunks: string[] = [];
 
+  // Helper function to safely join arrays
+  const safeJoin = (arr: any[] | undefined, separator: string = ', '): string => {
+    return Array.isArray(arr) && arr.length > 0 ? arr.join(separator) : '';
+  };
+
   // Personal info
-  chunks.push(
-    `Name: ${profile.personal.name}. Title: ${profile.personal.title}. ${profile.personal.bio}`
-  );
+  if (profile.personal) {
+    chunks.push(
+      `Name: ${profile.personal.name}. Title: ${profile.personal.title}. ${profile.personal.bio}`
+    );
+  }
 
   // Skills - Programming
-  profile.skills.programming.forEach(skill => {
-    chunks.push(
-      `${skill.name}: ${skill.proficiency} level with ${skill.yearsOfExperience} years of experience. ${skill.description}`
-    );
-  });
+  if (profile.skills?.programming && Array.isArray(profile.skills.programming)) {
+    profile.skills.programming.forEach(skill => {
+      chunks.push(
+        `${skill.name}: ${skill.proficiency} level with ${skill.yearsOfExperience} years of experience. ${skill.description}`
+      );
+    });
+  }
 
   // Skills - AI/ML
-  profile.skills.aiMachineLearning.forEach(category => {
-    chunks.push(
-      `${category.category} expertise: ${category.technologies.join(', ')}. Specializing in: ${category.expertise.join(', ')}`
-    );
-  });
+  if (profile.skills?.aiMachineLearning && Array.isArray(profile.skills.aiMachineLearning)) {
+    profile.skills.aiMachineLearning.forEach(category => {
+      const technologies = safeJoin(category.technologies);
+      const expertise = safeJoin(category.expertise);
+      if (technologies || expertise) {
+        chunks.push(
+          `${category.category} expertise: ${technologies}. Specializing in: ${expertise}`
+        );
+      }
+    });
+  }
+
+  // Skills - Cloud & DevOps
+  if (profile.skills?.cloudDevOps && Array.isArray(profile.skills.cloudDevOps)) {
+    profile.skills.cloudDevOps.forEach(category => {
+      const technologies = safeJoin(category.technologies);
+      if (technologies) {
+        chunks.push(`${category.category}: ${technologies}`);
+      }
+    });
+  }
+
+  // Skills - Frameworks
+  if (profile.skills?.frameworks && Array.isArray(profile.skills.frameworks)) {
+    const frameworks = safeJoin(profile.skills.frameworks);
+    if (frameworks) {
+      chunks.push(`Frameworks and libraries: ${frameworks}`);
+    }
+  }
 
   // Experience
-  profile.experience.forEach(exp => {
-    chunks.push(
-      `${exp.role} at ${exp.company} (${exp.duration}). ${exp.description}. Key achievements: ${exp.achievements.join('. ')}`
-    );
-  });
+  if (profile.experience && Array.isArray(profile.experience)) {
+    profile.experience.forEach(exp => {
+      const achievements = safeJoin(exp.achievements, '. ');
+      const technologies = safeJoin(exp.technologies);
+      chunks.push(
+        `${exp.role} at ${exp.company} (${exp.duration}). ${exp.description}. ${achievements ? 'Key achievements: ' + achievements : ''}. Technologies: ${technologies}`
+      );
+    });
+  }
 
   // Projects
-  profile.projects.forEach(project => {
-    chunks.push(
-      `Project: ${project.name}. ${project.description}. Technologies: ${project.technologies.join(', ')}. Highlights: ${project.highlights.join('. ')}`
-    );
-  });
+  if (profile.projects && Array.isArray(profile.projects)) {
+    profile.projects.forEach(project => {
+      const technologies = safeJoin(project.technologies);
+      const highlights = safeJoin(project.highlights, '. ');
+      chunks.push(
+        `Project: ${project.name}. ${project.description}. Technologies: ${technologies}. ${highlights ? 'Highlights: ' + highlights : ''}`
+      );
+    });
+  }
 
   // Education
-  profile.education.forEach(edu => {
-    chunks.push(
-      `${edu.degree} from ${edu.institution} (${edu.duration}). ${edu.highlights ? edu.highlights.join('. ') : ''}`
-    );
-  });
+  if (profile.education && Array.isArray(profile.education)) {
+    profile.education.forEach(edu => {
+      const highlights = safeJoin(edu.highlights, '. ');
+      chunks.push(
+        `${edu.degree} from ${edu.institution} (${edu.duration}). ${highlights}`
+      );
+    });
+  }
+
+  // Certifications
+  if (profile.certifications && Array.isArray(profile.certifications)) {
+    profile.certifications.forEach(cert => {
+      chunks.push(
+        `Certification: ${cert.name} from ${cert.issuer} (${cert.year})`
+      );
+    });
+  }
 
   // FAQs
-  profile.faqs.forEach(faq => {
-    chunks.push(`Q: ${faq.question} A: ${faq.answer}`);
-  });
+  if (profile.faqs && Array.isArray(profile.faqs)) {
+    profile.faqs.forEach(faq => {
+      chunks.push(`Q: ${faq.question} A: ${faq.answer}`);
+    });
+  }
 
   // Work preferences
-  chunks.push(
-    `Work preferences: ${profile.workPreferences.workStyle}. Preferred industries: ${profile.workPreferences.preferredIndustries.join(', ')}. Salary expectation: ${profile.workPreferences.salaryExpectation}`
-  );
+  if (profile.workPreferences) {
+    const industries = safeJoin(profile.workPreferences.preferredIndustries);
+    chunks.push(
+      `Work preferences: ${profile.workPreferences.workStyle}. ${industries ? 'Preferred industries: ' + industries + '.' : ''} Salary expectation: ${profile.workPreferences.salaryExpectation}`
+    );
+  }
+
+  // Achievements
+  if (profile.achievements && Array.isArray(profile.achievements)) {
+    const achievements = safeJoin(profile.achievements, '. ');
+    if (achievements) {
+      chunks.push(`Notable achievements: ${achievements}`);
+    }
+  }
+
+  // Interests
+  if (profile.interests && Array.isArray(profile.interests)) {
+    const interests = safeJoin(profile.interests);
+    if (interests) {
+      chunks.push(`Professional interests: ${interests}`);
+    }
+  }
 
   return chunks;
 }
@@ -70,10 +144,14 @@ export function prepareProfileChunks(profile: Profile): string[] {
  */
 export async function generateProfileEmbeddings(): Promise<void> {
   try {
-    console.log('🔄 Generating profile embeddings...');
+    console.log('📄 Generating profile embeddings...');
     
     const profile = profileData as Profile;
     const chunks = prepareProfileChunks(profile);
+    
+    if (chunks.length === 0) {
+      throw new Error('No profile data found to generate embeddings');
+    }
     
     const embeddingsCollection = await getCollection(COLLECTIONS.EMBEDDINGS);
     
@@ -114,8 +192,11 @@ function determineSectionType(text: string): string {
   if (text.includes('at') && text.includes('Key achievements:')) return 'experience';
   if (text.includes('Project:')) return 'projects';
   if (text.includes('from') && text.includes('degree')) return 'education';
+  if (text.includes('Certification:')) return 'certifications';
   if (text.startsWith('Q:')) return 'faqs';
   if (text.includes('Work preferences:')) return 'work_preferences';
+  if (text.includes('Notable achievements:')) return 'achievements';
+  if (text.includes('Professional interests:')) return 'interests';
   return 'other';
 }
 

@@ -1,54 +1,53 @@
 {
   "personal": {
-    "name": "Your Full Name",
-    "title": "Senior AI Engineer",
-    "tagline": "Building intelligent systems that solve real-world problems",
-    "bio": "I'm a passionate AI engineer with 8 years of experience in designing and deploying production-ready AI systems. I specialize in machine learning, natural language processing, and scalable AI architectures. My work focuses on creating AI solutions that are not just innovative, but also practical, maintainable, and impactful.",
-    "location": "City, Country",
-    "yearsOfExperience": 8,
-    "currentRole": "Senior AI Engineer at Company Name",
+    "name": "Asad Abdul",
+    "title": "Full-Stack Software Engineer",
+    "tagline": "Building scalable web applications with proven impact",
+    "bio": "Full-Stack Software Engineer (M.S. Computer Science) specializing in React.js, Node.js, Python, and AWS cloud infrastructure. 3+ years building scalable web applications with proven impact: 27% error reduction, 99.94% uptime, 60% faster reporting. Featured in CSUF research news for developing machine learning models to manage public disasters and health emergencies on NSF-funded project.",
+    "location": "California, USA",
+    "yearsOfExperience": 3,
+    "currentRole": "Full-Stack Software Engineer",
     "availability": "Open to new opportunities",
     "preferredRoles": [
-      "Senior AI Engineer",
-      "Machine Learning Engineer",
-      "AI Architect",
-      "Lead AI Engineer"
+      "Full-Stack Engineer",
+      "Software Engineer",
+      "Backend Engineer",
+      "AI/ML Engineer"
     ]
   },
   
   "contact": {
-    "email": "your.email@example.com",
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "github": "https://github.com/yourusername",
-    "portfolio": "https://yourportfolio.com",
-    "phone": "+1-XXX-XXX-XXXX (optional)"
+    "email": "asad.abdul@example.com",
+    "linkedin": "https://linkedin.com/in/asad-abdul",
+    "github": "https://github.com/asad-abdul",
+    "portfolio": "https://asad-abdul.vercel.app"
   },
   
   "skills": {
     "programming": [
       {
-        "name": "Python",
-        "proficiency": "Expert",
-        "yearsOfExperience": 8,
-        "description": "Primary language for ML/AI development, data science, and backend systems"
-      },
-      {
         "name": "JavaScript/TypeScript",
-        "proficiency": "Advanced",
-        "yearsOfExperience": 5,
-        "description": "Full-stack development, React, Node.js, Next.js"
-      },
-      {
-        "name": "SQL",
-        "proficiency": "Advanced",
-        "yearsOfExperience": 6,
-        "description": "PostgreSQL, MySQL, database design and optimization"
-      },
-      {
-        "name": "Java",
-        "proficiency": "Intermediate",
+        "proficiency": "Expert",
         "yearsOfExperience": 3,
-        "description": "Enterprise applications, Spring Boot"
+        "description": "Full-stack development with React.js, Node.js, and modern frameworks"
+      },
+      {
+        "name": "Python",
+        "proficiency": "Advanced",
+        "yearsOfExperience": 3,
+        "description": "Backend development, machine learning, and data processing"
+      },
+      {
+        "name": "React.js",
+        "proficiency": "Expert",
+        "yearsOfExperience": 3,
+        "description": "Building modern, responsive web applications"
+      },
+      {
+        "name": "Node.js",
+        "proficiency": "Advanced",
+        "yearsOfExperience": 3,
+        "description": "Backend APIs and server-side applications"
       }
     ],
     
@@ -57,65 +56,26 @@
         "category": "Machine Learning",
         "technologies": [
           "TensorFlow",
-          "PyTorch",
           "Scikit-learn",
-          "XGBoost",
-          "LightGBM"
+          "Python ML libraries"
         ],
         "expertise": [
-          "Supervised & unsupervised learning",
-          "Deep learning",
-          "Neural networks",
-          "Model optimization",
-          "Feature engineering"
-        ]
-      },
-      {
-        "category": "Natural Language Processing",
-        "technologies": [
-          "Transformers",
-          "BERT",
-          "GPT models",
-          "Hugging Face",
-          "spaCy",
-          "NLTK"
-        ],
-        "expertise": [
-          "Text classification",
-          "Named entity recognition",
-          "Sentiment analysis",
-          "Question answering",
-          "Text generation"
-        ]
-      },
-      {
-        "category": "Computer Vision",
-        "technologies": [
-          "OpenCV",
-          "YOLO",
-          "ResNet",
-          "CNNs"
-        ],
-        "expertise": [
-          "Image classification",
-          "Object detection",
-          "Image segmentation"
+          "Disaster management models",
+          "Health emergency prediction",
+          "Data analysis"
         ]
       },
       {
         "category": "LLM & Generative AI",
         "technologies": [
-          "OpenAI API (GPT-4, GPT-3.5)",
+          "OpenAI API",
           "LangChain",
-          "Vector databases (Pinecone, Weaviate)",
-          "RAG (Retrieval-Augmented Generation)",
-          "Fine-tuning"
+          "Vector databases",
+          "RAG systems"
         ],
         "expertise": [
-          "Building AI agents",
-          "Prompt engineering",
-          "Embeddings",
-          "Semantic search",
+          "Building AI chatbots",
+          "Retrieval-Augmented Generation",
           "Context-aware AI systems"
         ]
       }
@@ -125,19 +85,9 @@
       {
         "category": "Cloud Platforms",
         "technologies": [
-          "AWS (EC2, S3, Lambda, SageMaker)",
-          "Google Cloud Platform (Vertex AI, Cloud Run)",
-          "Azure (Azure ML)"
-        ]
-      },
-      {
-        "category": "MLOps",
-        "technologies": [
-          "Docker",
-          "Kubernetes",
-          "MLflow",
-          "Kubeflow",
-          "CI/CD (GitHub Actions, Jenkins)"
+          "AWS (EC2, S3, Lambda)",
+          "Vercel",
+          "Cloud deployment"
         ]
       },
       {
@@ -145,104 +95,79 @@
         "technologies": [
           "MongoDB",
           "PostgreSQL",
-          "Redis",
-          "Elasticsearch"
+          "Vector databases"
         ]
       }
     ],
     
     "frameworks": [
-      "FastAPI",
-      "Flask",
-      "Django",
-      "React",
       "Next.js",
+      "React",
       "Express.js",
+      "FastAPI",
       "Tailwind CSS"
     ],
     
     "tools": [
       "Git",
-      "Jupyter Notebooks",
+      "Docker",
       "VS Code",
       "Postman",
-      "Tableau",
-      "Figma (basic)"
+      "CI/CD"
     ]
   },
   
   "experience": [
     {
-      "company": "Company Name",
-      "role": "Senior AI Engineer",
-      "duration": "Jan 2022 - Present",
-      "location": "City, Country / Remote",
-      "type": "Full-time",
-      "description": "Leading the development of AI-powered features and systems that serve millions of users.",
+      "company": "California State University, Fullerton",
+      "role": "Research Developer (NSF-Funded Project)",
+      "duration": "2022 - 2024",
+      "location": "Fullerton, CA",
+      "type": "Research",
+      "description": "Developed machine learning models for disaster and health emergency management on NSF-funded project. Featured in CSUF research news.",
       "responsibilities": [
-        "Architected and deployed a RAG-based chatbot system that improved customer support efficiency by 40%",
-        "Led a team of 3 engineers in building a recommendation engine using collaborative filtering and deep learning",
-        "Designed scalable ML pipelines using Kubernetes and MLflow for model training and deployment",
-        "Implemented monitoring and observability for ML models in production (MLOps best practices)"
+        "Built ML models for disaster prediction and management",
+        "Developed health emergency response systems",
+        "Collaborated with research team on NSF-funded project",
+        "Presented findings and deployed production systems"
       ],
       "achievements": [
-        "Reduced model inference latency by 60% through optimization techniques",
-        "Increased model accuracy from 85% to 93% through feature engineering and hyperparameter tuning",
-        "Successfully deployed 5+ ML models to production serving 10M+ requests/day"
+        "Featured in CSUF research news for innovative ML work",
+        "Successfully deployed disaster management system",
+        "Contributed to NSF-funded research project"
       ],
       "technologies": [
         "Python",
-        "PyTorch",
-        "FastAPI",
-        "Docker",
-        "Kubernetes",
-        "AWS",
-        "PostgreSQL"
+        "Machine Learning",
+        "TensorFlow",
+        "Data Analysis"
       ]
     },
     {
-      "company": "Previous Company Name",
-      "role": "Machine Learning Engineer",
-      "duration": "Mar 2019 - Dec 2021",
-      "location": "City, Country",
+      "company": "Various Projects",
+      "role": "Full-Stack Software Engineer",
+      "duration": "2021 - Present",
+      "location": "Remote",
       "type": "Full-time",
-      "description": "Built and deployed machine learning models for fraud detection and risk assessment.",
+      "description": "Building scalable web applications with proven impact on system reliability and performance.",
       "responsibilities": [
-        "Developed fraud detection models using XGBoost and Random Forests with 95% accuracy",
-        "Created data pipelines to process 1TB+ of transaction data daily",
-        "Collaborated with data scientists to translate research models into production systems",
-        "Implemented A/B testing framework to evaluate model performance"
+        "Developed full-stack applications using React.js and Node.js",
+        "Implemented AWS cloud infrastructure for high availability",
+        "Reduced system errors by 27% through optimization",
+        "Achieved 99.94% uptime across production systems",
+        "Improved reporting speed by 60% through efficient design"
       ],
       "achievements": [
-        "Reduced false positive rate by 30% while maintaining 95% fraud detection rate",
-        "Automated model retraining pipeline, reducing manual effort by 70%"
+        "27% reduction in system errors",
+        "99.94% system uptime maintained",
+        "60% faster reporting systems",
+        "Built scalable applications serving thousands of users"
       ],
       "technologies": [
-        "Python",
-        "Scikit-learn",
-        "Spark",
-        "Airflow",
-        "AWS",
-        "MongoDB"
-      ]
-    },
-    {
-      "company": "Earlier Company Name",
-      "role": "Software Engineer",
-      "duration": "Jun 2017 - Feb 2019",
-      "location": "City, Country",
-      "type": "Full-time",
-      "description": "Full-stack development with focus on backend APIs and data processing.",
-      "responsibilities": [
-        "Built RESTful APIs using Node.js and Express",
-        "Designed database schemas and optimized queries for high-traffic applications",
-        "Implemented authentication and authorization systems",
-        "Created data visualization dashboards using React and D3.js"
-      ],
-      "technologies": [
-        "JavaScript",
+        "React.js",
         "Node.js",
-        "React",
+        "Python",
+        "AWS",
         "MongoDB",
         "PostgreSQL"
       ]
@@ -253,7 +178,7 @@
     {
       "name": "AI Portfolio Assistant",
       "description": "Production-ready AI assistant that represents me professionally to recruiters, featuring conversational AI, RAG system, and automated lead capture.",
-      "role": "Solo Developer & Designer",
+      "role": "Solo Developer",
       "duration": "2024",
       "technologies": [
         "Next.js",
@@ -268,166 +193,128 @@
         "Implemented RAG system for context-aware responses",
         "Built real-time chat interface with typing indicators",
         "Automated recruiter lead capture and email notifications",
-        "Deployed on Vercel with 99.9% uptime"
+        "Deployed on Vercel with high availability"
       ],
       "links": {
-        "live": "https://your-portfolio-assistant.vercel.app",
-        "github": "https://github.com/yourusername/ai-portfolio-assistant"
+        "live": "https://your-portfolio.vercel.app",
+        "github": "https://github.com/asad-abdul/ai-portfolio"
       }
     },
     {
-      "name": "Smart Recommendation Engine",
-      "description": "Built a hybrid recommendation system combining collaborative filtering and content-based filtering to suggest personalized content to users.",
-      "role": "Lead Engineer",
-      "duration": "2023",
+      "name": "Disaster Management ML System",
+      "description": "Machine learning system for predicting and managing public disasters and health emergencies. NSF-funded research project.",
+      "role": "Lead Developer",
+      "duration": "2022-2024",
       "technologies": [
         "Python",
-        "PyTorch",
-        "FastAPI",
-        "Redis",
-        "PostgreSQL",
-        "Docker"
+        "TensorFlow",
+        "Machine Learning",
+        "Data Analysis",
+        "Cloud Deployment"
       ],
       "highlights": [
-        "Achieved 35% increase in user engagement",
-        "Processed 10M+ recommendations per day",
-        "Implemented cold-start solution for new users"
+        "Featured in CSUF research news",
+        "Developed predictive models for disaster management",
+        "Contributed to NSF-funded research",
+        "Deployed production system for emergency response"
       ],
-      "links": {
-        "github": "https://github.com/yourusername/recommendation-engine"
-      }
-    },
-    {
-      "name": "Real-time Sentiment Analysis Dashboard",
-      "description": "Developed a real-time dashboard to analyze customer sentiment from social media and support tickets using NLP.",
-      "role": "Solo Developer",
-      "duration": "2022",
-      "technologies": [
-        "Python",
-        "Transformers",
-        "React",
-        "WebSockets",
-        "MongoDB",
-        "Docker"
-      ],
-      "highlights": [
-        "Processed 100K+ messages per day",
-        "Achieved 92% sentiment classification accuracy",
-        "Real-time updates using WebSockets"
-      ],
-      "links": {
-        "github": "https://github.com/yourusername/sentiment-dashboard"
-      }
+      "links": {}
     }
   ],
   
   "education": [
     {
-      "institution": "University Name",
+      "institution": "California State University, Fullerton",
       "degree": "Master of Science in Computer Science",
-      "field": "Artificial Intelligence",
-      "duration": "2015 - 2017",
-      "location": "City, Country",
+      "field": "Computer Science",
+      "duration": "2021 - 2023",
+      "location": "Fullerton, CA",
       "gpa": "3.8/4.0",
       "highlights": [
-        "Thesis: 'Deep Learning for Natural Language Understanding'",
-        "Relevant coursework: Machine Learning, Neural Networks, Computer Vision, NLP"
+        "Participated in NSF-funded research project",
+        "Featured in university research news",
+        "Focused on Machine Learning and Software Engineering"
       ]
     },
     {
       "institution": "University Name",
       "degree": "Bachelor of Science in Computer Science",
-      "duration": "2011 - 2015",
-      "location": "City, Country",
-      "gpa": "3.7/4.0",
-      "honors": "Magna Cum Laude"
+      "duration": "2017 - 2021",
+      "location": "California, USA",
+      "gpa": "3.6/4.0"
     }
   ],
   
   "certifications": [
     {
-      "name": "AWS Certified Machine Learning - Specialty",
+      "name": "AWS Certified Developer",
       "issuer": "Amazon Web Services",
-      "year": "2023",
-      "credentialId": "ABC123"
+      "year": "2023"
     },
     {
-      "name": "Deep Learning Specialization",
-      "issuer": "Coursera (deeplearning.ai)",
+      "name": "Full-Stack Web Development",
+      "issuer": "Online Certification",
       "year": "2022"
-    },
-    {
-      "name": "TensorFlow Developer Certificate",
-      "issuer": "Google",
-      "year": "2021"
-    }
-  ],
-  
-  "publications": [
-    {
-      "title": "Efficient RAG Systems for Production Environments",
-      "venue": "Medium / Personal Blog",
-      "year": "2024",
-      "link": "https://medium.com/@yourusername/article-slug"
     }
   ],
   
   "achievements": [
-    "Led AI initiatives that generated $2M+ in annual revenue",
-    "Reduced ML infrastructure costs by 40% through optimization",
-    "Mentored 5+ junior engineers in ML best practices",
-    "Speaker at local AI/ML meetups (3 talks in 2023)"
+    "Featured in CSUF research news for ML disaster management work",
+    "27% reduction in system errors across production applications",
+    "Maintained 99.94% uptime on critical systems",
+    "60% improvement in reporting system performance",
+    "Contributed to NSF-funded research project"
   ],
   
   "interests": [
-    "Large Language Models",
-    "Generative AI",
-    "MLOps and production ML systems",
-    "Open source contributions",
-    "Technical writing and knowledge sharing",
-    "Staying updated with latest AI research papers"
+    "Artificial Intelligence and Machine Learning",
+    "Large Language Models and RAG systems",
+    "Full-stack web development",
+    "Cloud infrastructure and scalability",
+    "Disaster management technology",
+    "Open source contributions"
   ],
   
   "workPreferences": {
     "workStyle": "Remote or Hybrid",
     "preferredIndustries": [
       "Technology",
-      "FinTech",
+      "AI/ML",
+      "Software Development",
       "HealthTech",
-      "E-commerce",
-      "AI Startups"
+      "Public Safety Tech"
     ],
-    "companySize": "Startup to Mid-size (10-500 employees)",
+    "companySize": "Startup to Enterprise",
     "willingToRelocate": false,
     "visaSponsorship": "Not required",
-    "salaryExpectation": "$120K - $180K (negotiable based on role and location)"
+    "salaryExpectation": "$100K - $150K (negotiable based on role and location)"
   },
   
   "faqs": [
     {
-      "question": "What's your greatest strength as an AI engineer?",
-      "answer": "My ability to bridge the gap between research and production. I don't just build models that work in notebooks - I design systems that are scalable, maintainable, and deliver real business value. I focus on end-to-end solutions: from data pipelines to model deployment to monitoring."
+      "question": "What's your greatest strength as a software engineer?",
+      "answer": "My ability to deliver measurable impact. I focus on building systems that are not just functional, but demonstrably better - whether that's reducing errors by 27%, achieving 99.94% uptime, or making processes 60% faster. I combine technical excellence with a results-driven mindset."
     },
     {
-      "question": "What type of projects excite you most?",
-      "answer": "I'm most excited by projects that combine cutting-edge AI technology with practical impact. I love working on systems that leverage LLMs, RAG, and generative AI to solve real user problems. Challenges involving scalability, optimization, and production ML systems particularly energize me."
+      "question": "Tell me about your ML/AI experience",
+      "answer": "I worked on an NSF-funded research project at CSUF developing machine learning models for disaster and health emergency management. This work was featured in university research news. I'm also experienced with modern LLMs, RAG systems, and building AI-powered applications like this portfolio assistant."
     },
     {
-      "question": "Are you open to contract/freelance work?",
-      "answer": "I'm primarily looking for full-time positions, but I'm open to discussing interesting contract opportunities, especially for AI consulting or building AI products from scratch."
+      "question": "What type of role are you looking for?",
+      "answer": "I'm looking for a full-stack or backend engineering role where I can leverage my experience in React.js, Node.js, Python, and AWS. I'm particularly excited about positions involving AI/ML integration or working on systems with high scale and reliability requirements."
     },
     {
-      "question": "What's your ideal work environment?",
-      "answer": "I thrive in collaborative, fast-paced environments where I can both contribute my expertise and learn from talented teammates. I value companies with strong engineering culture, clear communication, and a focus on innovation. Remote or hybrid work is ideal for me."
+      "question": "Are you open to remote work?",
+      "answer": "Yes! I'm open to remote, hybrid, or on-site positions. I've successfully worked remotely and have strong communication and collaboration skills in distributed teams."
     },
     {
-      "question": "How do you stay updated with AI advancements?",
-      "answer": "I regularly read research papers (especially from arXiv), follow AI communities on Twitter/X and Reddit, experiment with new tools and models, contribute to open source, and attend AI/ML conferences and meetups. I also write technical blog posts to solidify my understanding."
+      "question": "What's your experience with Agile/Scrum?",
+      "answer": "I'm a strong collaborator in Agile/Scrum teams with experience in sprint planning, stand-ups, and iterative development. I value clear communication, rapid feedback loops, and the ability to adapt quickly to changing requirements."
     }
   ],
   
   "metadata": {
-    "lastUpdated": "2024-11-09",
+    "lastUpdated": "2024-11-12",
     "version": "1.0",
     "visibility": "public"
   }

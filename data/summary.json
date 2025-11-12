@@ -1,0 +1,37 @@
+
+{
+  "name": "Asad Abdul",
+  "title": "Full-Stack Software Engineer",
+  "degree": "M.S. Computer Science",
+  "yearsOfExperience": "3+",
+  
+  "summary": {
+    "paragraph1": "Full-Stack Software Engineer (M.S. Computer Science) specializing in React.js, Node.js, Python, and AWS cloud infrastructure. 3+ years building scalable web applications with proven impact: 27% error reduction, 99.94% uptime, 60% faster reporting.",
+    "paragraph2": "Featured in CSUF research news for developing machine learning models to manage public disasters and health emergencies on NSF-funded project. Experienced with large language models, LangChain framework, and vector databases.",
+    "paragraph3": "Strong collaborator in Agile/Scrum teams with ability to rapidly learn new technologies. Seeking to apply technical expertise to advance innovative solutions."
+  },
+  
+  "stats": [
+    {
+      "value": "3+",
+      "label": "Years Exp."
+    },
+    {
+      "value": "99.94%",
+      "label": "Uptime"
+    },
+    {
+      "value": "60%",
+      "label": "Faster"
+    },
+    {
+      "value": "NSF",
+      "label": "Funded"
+    }
+  ],
+  
+  "cta": {
+    "text": "Want to know more?",
+    "linkText": "Ask the AI assistant anything!"
+  }
+}
