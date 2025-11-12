@@ -10,7 +10,7 @@ export default function CompactSkillsShowcase() {
       borderColor: "border-cyan-500/30",
       skills: [
         { name: "React.js", logo: "/logos/react.png" },
-        { name: "Next.js", logo: "/logos/nextjs.svg" },
+        { name: "Next.js", logo: "/logos/next.js.png" },
         { name: "TypeScript", logo: "/logos/typescript.png" },
         { name: "JavaScript", logo: "/logos/javascript.png" },
         { name: "HTML5", logo: "/logos/html5.png" },
@@ -24,12 +24,12 @@ export default function CompactSkillsShowcase() {
       borderColor: "border-purple-500/30",
       skills: [
         { name: "LLMs", logo: "/logos/llm.png" },
-        { name: "RAG", logo: "/logos/rag.svg" },
+        { name: "RAG", logo: "/logos/rag.png" },
         { name: "LangChain", logo: "/logos/chain.png" },
         { name: "GPT-4", logo: "/logos/chatgpt.png" },
         { name: "OpenAI", logo: "/logos/chatgpt1.png" },
         { name: "Prompts", logo: "/logos/command.png" },
-        { name: "Vectors", logo: "/logos/vector.svg" },
+        { name: "Vectors", logo: "/logos/vector.png" },
       ],
     },
     {
@@ -42,7 +42,6 @@ export default function CompactSkillsShowcase() {
         { name: "REST API", logo: "/logos/api.png" },
         { name: "Webhooks", logo: "/logos/webhook.png" },
         { name: "Microservices", logo: "/logos/microservices.png" },
-        { name: "Real-time", logo: "/logos/realtime.svg" },
       ],
     },
     {

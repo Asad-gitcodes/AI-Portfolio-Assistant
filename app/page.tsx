@@ -85,8 +85,10 @@ export default function Home() {
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
             </a>
-            <button className="glass px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-white text-xs md:text-sm hover:glass-strong transition-all glow-hover bg-gradient-to-r from-orange-500/20 to-red-600/20 border-orange-500/30 hidden sm:block">
-              📄 Resume
+            <button className="glass px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-white text-xs md:text-sm hover:glass-strong transition-all glow-hover bg-gradient-to-r from-orange-500/20 to-red-600/20 border-orange-500/30">
+              {/* Icon only on mobile, text on desktop */}
+              <span className="sm:hidden">📄</span>
+              <span className="hidden sm:inline">📄 Resume</span>
             </button>
           </div>
         </div>
@@ -153,7 +155,7 @@ export default function Home() {
                   <div className="absolute -top-4 sm:-top-6 md:-top-10 -left-4 sm:-left-6 md:-left-10 animate-float opacity-80 hidden sm:block">
                     <div className="glass p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl md:rounded-2xl border border-orange-500/30 w-10 sm:w-12 md:w-16 h-10 sm:h-12 md:h-16 flex items-center justify-center bg-gradient-to-br from-orange-500/10 to-red-600/10">
                       <img
-                        src="/logos/React.png"
+                        src="/logos/react.png"
                         alt="Speed"
                         className="w-6 sm:w-7 md:w-10 h-6 sm:h-7 md:h-10 object-contain"
                         onError={(e) => {

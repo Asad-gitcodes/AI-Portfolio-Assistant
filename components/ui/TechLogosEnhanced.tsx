@@ -89,7 +89,7 @@ export default function TechLogosEnhanced() {
       category: "AI/ML",
     },
     {
-      logo: "/logos/rag.svg",
+      logo: "/logos/rag.png",
       name: "RAG",
       color: "text-teal-400",
       position: "top-[50%] right-[22%]",
