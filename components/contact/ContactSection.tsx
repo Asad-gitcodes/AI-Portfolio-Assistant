@@ -225,13 +225,13 @@ export default function ContactSection() {
                 <div className="min-w-0 flex-1">
                   <p className="text-xs text-gray-400">Email</p>
                   <p className="text-xs sm:text-sm text-white font-semibold truncate">
-                    your.email@example.com
+                    asadabdul.aj@gmail.com
                   </p>
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/asad-abdul/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass rounded-lg p-2.5 sm:p-3 hover:glass-strong transition-all active:scale-95 sm:hover:scale-105 flex items-center gap-2 sm:gap-3 group"
