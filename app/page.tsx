@@ -112,18 +112,19 @@ export default function Home() {
             {/* Text Section */}
             <div className="flex-1 text-center lg:text-left w-full lg:w-auto">
               <p className="text-orange-400 font-semibold mb-2 md:mb-3 text-sm md:text-base">
-                Hey, I am
+                Hi, I’m the AI Assistant representing
               </p>
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
-                <span className="gradient-text">AI Assistant</span>
+                <span className="gradient-text block">Asad Abdul</span>
               </h2>
 
               <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 mb-4 md:mb-6 px-4 lg:px-0">
-                Ask anything about my background, skills, experience, and
-                projects.
+                Explore my background, experience, and projects through an
+                interactive chat
+                <br className="hidden sm:block" />
                 <br className="hidden sm:block" />
                 <span className="text-orange-400 font-semibold">
-                  I'm here 24/7 to answer your questions!
+                  available 24/7 to answer your questions!
                 </span>
               </p>
 
@@ -142,9 +143,11 @@ export default function Home() {
                   ></path>
                 </svg>
                 <span>
-                  Uses{" "}
-                  <span className="font-semibold text-orange-400">RAG</span> for
-                  context-aware responses
+                  Powered by{" "}
+                  <span className="font-semibold text-orange-400">
+                    Retrieval-Augmented Generation
+                  </span>{" "}
+                  for precise, context-aware responses.
                 </span>
               </div>
             </div>
@@ -202,17 +205,17 @@ export default function Home() {
           </div>
         </ScrollSection>
 
-        {/* Skills Showcase - Appears on scroll */}
-        <ScrollSection delay={0}>
-          <div className="mt-12 md:mt-20">
-            <CompactSkillsShowcase />
-          </div>
-        </ScrollSection>
-
         {/* Experience Timeline - Appears on scroll */}
         <ScrollSection delay={0}>
           <div className="mt-12 md:mt-20">
             <ExperienceTimeline />
+          </div>
+        </ScrollSection>
+
+        {/* Skills Showcase - Appears on scroll */}
+        <ScrollSection delay={0}>
+          <div className="mt-12 md:mt-20">
+            <CompactSkillsShowcase />
           </div>
         </ScrollSection>
 

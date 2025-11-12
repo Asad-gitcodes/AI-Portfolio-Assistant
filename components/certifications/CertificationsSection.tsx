@@ -8,7 +8,7 @@ export default function CertificationsSection() {
       title: "Building RAG Agents with LLMs",
       issuer: "NVIDIA",
       year: "2024",
-      logo: "/logos/nvidia.svg",
+      logo: "/logos/nvidia.png",
       credential: "Certificate ID: NVIDIA-RAG-2024",
       skills: ["RAG", "LLMs", "AI Agents", "NVIDIA"],
     },
@@ -93,20 +93,6 @@ export default function CertificationsSection() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Stats - Responsive */}
-      <div className="mt-8 sm:mt-10 md:mt-12 flex justify-center">
-        <div className="glass-strong rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 border border-orange-500/20 hover:border-orange-500/50 transition-all">
-          <p className="text-center">
-            <span className="text-2xl sm:text-3xl font-bold gradient-text">
-              {certifications.length}
-            </span>
-            <span className="text-gray-400 text-xs sm:text-sm ml-2">
-              Professional Certification{certifications.length > 1 ? "s" : ""}
-            </span>
-          </p>
-        </div>
       </div>
     </div>
   );

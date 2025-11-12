@@ -9,12 +9,12 @@ export default function SimpleSummary() {
         {/* Section Header */}
         <div>
           <p className="text-orange-400 text-sm md:text-base font-medium mb-2">
-            Hello! I'm the
+            Here’s a quick
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-            <span className="gradient-text">AI Assistant</span>{" "}
-            <span className="text-white">representing</span>{" "}
-            <span className="text-orange-400">Asad Abdul</span>
+            <span className="gradient-text">overview</span>{" "}
+            <span className="text-white">of my</span>{" "}
+            <span className="text-orange-400">expertise</span>
           </h2>
         </div>
 

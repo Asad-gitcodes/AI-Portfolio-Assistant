@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
       name: "Sampson Akwafuo, PhD",
       role: "Asst. Prof. of Computer Science",
       company: "California State University, Fullerton",
-      avatar: "/avatars/sampson.jpg",
+      avatar: "/avatars/sampson.jpeg",
       relationship: "Managed Asad directly",
       date: "July 21, 2025",
       rating: 5,
@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
       name: "Doina Bein",
       role: "Professor & Department Chair",
       company: "California State University, Fullerton",
-      avatar: "/avatars/doina.jpg",
+      avatar: "/avatars/doina.jpeg",
       relationship: "Managed Asad directly",
       date: "April 17, 2025",
       rating: 5,
@@ -32,50 +32,6 @@ export default function TestimonialsSection() {
         "Technical expertise",
         "Problem-solving",
         "Research contributions",
-      ],
-    },
-    {
-      name: "Esther Howard",
-      role: "Product Manager",
-      company: "Tech Solutions Inc.",
-      avatar: "/avatars/esther.jpg",
-      username: "@estherhoward",
-      rating: 5,
-      text: "I can't say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-      highlights: ["Problem-solving", "Complex projects", "Seamless execution"],
-    },
-    {
-      name: "Guy Hawkins",
-      role: "Marketing Director",
-      company: "Digital Innovations",
-      avatar: "/avatars/guy.jpg",
-      username: "@guyhawkins",
-      rating: 5,
-      text: "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out.",
-      highlights: ["Professionalism", "Dedication", "Outstanding results"],
-    },
-    {
-      name: "Wade Warren",
-      role: "Senior Developer",
-      company: "WebTech Solutions",
-      avatar: "/avatars/wade.jpg",
-      username: "@wadewarren",
-      rating: 5,
-      text: "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-      highlights: ["Modern design", "User-friendly", "Quality commitment"],
-    },
-    {
-      name: "Floyd Miles",
-      role: "E-commerce Manager",
-      company: "Online Retail Co.",
-      avatar: "/avatars/floyd.jpg",
-      username: "@floydmiles",
-      rating: 5,
-      text: "Adrian's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
-      highlights: [
-        "E-commerce expertise",
-        "Scalable solutions",
-        "Results-driven",
       ],
     },
   ];
@@ -158,11 +114,6 @@ export default function TestimonialsSection() {
                 <p className="text-gray-400 text-[10px] sm:text-xs truncate">
                   {testimonial.role}
                 </p>
-                {testimonial.username && (
-                  <p className="text-gray-500 text-[10px] sm:text-xs truncate">
-                    {testimonial.username}
-                  </p>
-                )}
                 {testimonial.relationship && (
                   <p className="text-orange-400/70 text-[10px] sm:text-xs mt-0.5 sm:mt-1 truncate">
                     {testimonial.relationship}
@@ -206,7 +157,7 @@ export default function TestimonialsSection() {
       {/* Summary Stats - Responsive */}
       <div className="mt-8 sm:mt-10 md:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
         {[
-          { value: "6+", label: "Recommendations" },
+          { value: "2", label: "Recommendations" },
           { value: "2", label: "PhD Professors" },
           { value: "5⭐", label: "Average Rating" },
           { value: "100%", label: "Satisfaction" },

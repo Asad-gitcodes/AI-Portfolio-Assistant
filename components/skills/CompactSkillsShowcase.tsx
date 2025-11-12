@@ -26,9 +26,9 @@ export default function CompactSkillsShowcase() {
         { name: "LLMs", logo: "/logos/llm.png" },
         { name: "RAG", logo: "/logos/rag.svg" },
         { name: "LangChain", logo: "/logos/chain.png" },
-        { name: "GPT-4", logo: "/logos/gpt4.svg" },
-        { name: "OpenAI", logo: "/logos/openai.svg" },
-        { name: "Prompts", logo: "/logos/prompt.svg" },
+        { name: "GPT-4", logo: "/logos/chatgpt.png" },
+        { name: "OpenAI", logo: "/logos/chatgpt1.png" },
+        { name: "Prompts", logo: "/logos/command.png" },
         { name: "Vectors", logo: "/logos/vector.svg" },
       ],
     },
@@ -37,11 +37,11 @@ export default function CompactSkillsShowcase() {
       color: "from-green-500 to-emerald-600",
       borderColor: "border-green-500/30",
       skills: [
-        { name: "Node.js", logo: "/logos/nodejs.svg" },
-        { name: "Express", logo: "/logos/express.svg" },
-        { name: "REST API", logo: "/logos/api.svg" },
-        { name: "Webhooks", logo: "/logos/webhook.svg" },
-        { name: "Microservices", logo: "/logos/microservices.svg" },
+        { name: "Node.js", logo: "/logos/nodejs.png" },
+        { name: "Express", logo: "/logos/express.png" },
+        { name: "REST API", logo: "/logos/api.png" },
+        { name: "Webhooks", logo: "/logos/webhook.png" },
+        { name: "Microservices", logo: "/logos/microservices.png" },
         { name: "Real-time", logo: "/logos/realtime.svg" },
       ],
     },
@@ -50,12 +50,12 @@ export default function CompactSkillsShowcase() {
       color: "from-orange-500 to-red-600",
       borderColor: "border-orange-500/30",
       skills: [
-        { name: "Git", logo: "/logos/git.svg" },
-        { name: "GitHub", logo: "/logos/github.svg" },
-        { name: "CI/CD", logo: "/logos/cicd.svg" },
-        { name: "AWS", logo: "/logos/aws.svg" },
-        { name: "Docker", logo: "/logos/docker.svg" },
-        { name: "Terraform", logo: "/logos/terraform.svg" },
+        { name: "Git", logo: "/logos/git.png" },
+        { name: "GitHub", logo: "/logos/github.png" },
+        { name: "CI/CD", logo: "/logos/cicd.png" },
+        { name: "AWS", logo: "/logos/aws.png" },
+        { name: "Docker", logo: "/logos/docker.png" },
+        { name: "Terraform", logo: "/logos/terraform.png" },
       ],
     },
     {
@@ -63,10 +63,10 @@ export default function CompactSkillsShowcase() {
       color: "from-blue-500 to-indigo-600",
       borderColor: "border-blue-500/30",
       skills: [
-        { name: "PostgreSQL", logo: "/logos/postgresql.svg" },
-        { name: "MySQL", logo: "/logos/mysql.svg" },
-        { name: "MongoDB", logo: "/logos/mongodb.svg" },
-        { name: "Redis", logo: "/logos/redis.svg" },
+        { name: "PostgreSQL", logo: "/logos/postgresql.png" },
+        { name: "MySQL", logo: "/logos/mysql.png" },
+        { name: "MongoDB", logo: "/logos/mongodb.png" },
+        { name: "Redis", logo: "/logos/redis.png" },
       ],
     },
     {
@@ -74,10 +74,10 @@ export default function CompactSkillsShowcase() {
       color: "from-teal-500 to-cyan-600",
       borderColor: "border-teal-500/30",
       skills: [
-        { name: "Agile", logo: "/logos/agile.svg" },
-        { name: "Scrum", logo: "/logos/scrum.svg" },
-        { name: "Stakeholder", logo: "/logos/stakeholder.svg" },
-        { name: "A/B Test", logo: "/logos/abtest.svg" },
+        { name: "Agile", logo: "/logos/agile.png" },
+        { name: "Scrum", logo: "/logos/scrum.png" },
+        { name: "Stakeholder", logo: "/logos/stakeholder.png" },
+        { name: "A/B Test", logo: "/logos/abtest.png" },
       ],
     },
   ];
@@ -141,28 +141,6 @@ export default function CompactSkillsShowcase() {
                 </div>
               ))}
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Summary Stats */}
-      <div className="mt-12 grid grid-cols-3 md:grid-cols-6 gap-3">
-        {[
-          { value: "8", label: "Frontend" },
-          { value: "7", label: "AI/ML" },
-          { value: "6", label: "Backend" },
-          { value: "6", label: "Tools" },
-          { value: "4", label: "Databases" },
-          { value: "4", label: "Practices" },
-        ].map((stat, index) => (
-          <div
-            key={index}
-            className="glass-strong rounded-lg p-3 text-center border border-orange-500/20 hover:border-orange-500/50 transition-all hover:scale-105"
-          >
-            <p className="text-2xl font-bold gradient-text mb-1">
-              {stat.value}
-            </p>
-            <p className="text-xs text-gray-400">{stat.label}</p>
           </div>
         ))}
       </div>
