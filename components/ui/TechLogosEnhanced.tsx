@@ -1,4 +1,4 @@
-// components/ui/TechLogosEnhanced.tsx - Complete tech stack with all logos
+// components/ui/TechLogosEnhanced.tsx - Complete tech stack with logo images
 
 "use client";
 
@@ -6,23 +6,16 @@ export default function TechLogosEnhanced() {
   const logos = [
     // Frontend Technologies
     {
-      emoji: "⚛️",
+      logo: "/logos/react.png",
       name: "React.js",
       color: "text-cyan-400",
       position: "top-[8%] right-[18%]",
       delay: "0s",
       category: "Frontend",
     },
+
     {
-      emoji: "▲",
-      name: "Next.js",
-      color: "text-white",
-      position: "top-[12%] left-[15%]",
-      delay: "0.2s",
-      category: "Frontend",
-    },
-    {
-      emoji: "🔷",
+      logo: "/logos/typescript.png",
       name: "TypeScript",
       color: "text-blue-500",
       position: "top-[20%] right-[10%]",
@@ -30,7 +23,7 @@ export default function TechLogosEnhanced() {
       category: "Frontend",
     },
     {
-      emoji: "📜",
+      logo: "/logos/javascript.png",
       name: "JavaScript",
       color: "text-yellow-400",
       position: "top-[28%] left-[8%]",
@@ -38,7 +31,7 @@ export default function TechLogosEnhanced() {
       category: "Frontend",
     },
     {
-      emoji: "🌐",
+      logo: "/logos/html5.png",
       name: "HTML5",
       color: "text-orange-500",
       position: "top-[18%] left-[22%]",
@@ -46,7 +39,7 @@ export default function TechLogosEnhanced() {
       category: "Frontend",
     },
     {
-      emoji: "🎨",
+      logo: "/logos/css3.png",
       name: "CSS3",
       color: "text-blue-400",
       position: "top-[25%] right-[25%]",
@@ -54,7 +47,7 @@ export default function TechLogosEnhanced() {
       category: "Frontend",
     },
     {
-      emoji: "💨",
+      logo: "/logos/tailwind-css.png",
       name: "Tailwind CSS",
       color: "text-cyan-500",
       position: "top-[15%] right-[5%]",
@@ -64,7 +57,7 @@ export default function TechLogosEnhanced() {
 
     // AI/ML Technologies
     {
-      emoji: "🤖",
+      logo: "/logos/llm.png",
       name: "AI/ML",
       color: "text-purple-500",
       position: "top-[38%] left-[12%]",
@@ -72,7 +65,7 @@ export default function TechLogosEnhanced() {
       category: "AI/ML",
     },
     {
-      emoji: "🧠",
+      logo: "/logos/llm.png",
       name: "LLMs",
       color: "text-indigo-400",
       position: "top-[35%] right-[15%]",
@@ -80,7 +73,7 @@ export default function TechLogosEnhanced() {
       category: "AI/ML",
     },
     {
-      emoji: "🔗",
+      logo: "/logos/chain.png",
       name: "LangChain",
       color: "text-green-400",
       position: "top-[42%] right-[8%]",
@@ -88,7 +81,7 @@ export default function TechLogosEnhanced() {
       category: "AI/ML",
     },
     {
-      emoji: "✨",
+      logo: "/logos/chatgpt.png",
       name: "GPT-4",
       color: "text-emerald-400",
       position: "top-[45%] left-[5%]",
@@ -96,7 +89,7 @@ export default function TechLogosEnhanced() {
       category: "AI/ML",
     },
     {
-      emoji: "🎯",
+      logo: "/logos/rag.svg",
       name: "RAG",
       color: "text-teal-400",
       position: "top-[50%] right-[22%]",
@@ -106,7 +99,7 @@ export default function TechLogosEnhanced() {
 
     // Backend Technologies
     {
-      emoji: "🟢",
+      logo: "/logos/nodejs.png",
       name: "Node.js",
       color: "text-green-500",
       position: "top-[55%] left-[10%]",
@@ -114,7 +107,7 @@ export default function TechLogosEnhanced() {
       category: "Backend",
     },
     {
-      emoji: "🚂",
+      logo: "/logos/express.png",
       name: "Express.js",
       color: "text-gray-400",
       position: "top-[58%] right-[12%]",
@@ -122,7 +115,7 @@ export default function TechLogosEnhanced() {
       category: "Backend",
     },
     {
-      emoji: "🔌",
+      logo: "/logos/api.png",
       name: "REST APIs",
       color: "text-blue-400",
       position: "top-[62%] left-[18%]",
@@ -132,7 +125,7 @@ export default function TechLogosEnhanced() {
 
     // Cloud & Tools
     {
-      emoji: "☁️",
+      logo: "/logos/aws.png",
       name: "AWS",
       color: "text-orange-400",
       position: "bottom-[32%] right-[10%]",
@@ -140,7 +133,7 @@ export default function TechLogosEnhanced() {
       category: "Cloud",
     },
     {
-      emoji: "🐳",
+      logo: "/logos/docker.png",
       name: "Docker",
       color: "text-blue-500",
       position: "bottom-[28%] left-[8%]",
@@ -148,7 +141,7 @@ export default function TechLogosEnhanced() {
       category: "Tools",
     },
     {
-      emoji: "🔧",
+      logo: "/logos/cicd.png",
       name: "CI/CD",
       color: "text-purple-400",
       position: "bottom-[35%] left-[20%]",
@@ -156,7 +149,7 @@ export default function TechLogosEnhanced() {
       category: "Tools",
     },
     {
-      emoji: "🌿",
+      logo: "/logos/git.png",
       name: "Git",
       color: "text-red-500",
       position: "bottom-[25%] right-[18%]",
@@ -166,7 +159,7 @@ export default function TechLogosEnhanced() {
 
     // Databases
     {
-      emoji: "🐘",
+      logo: "/logos/postgresql.png",
       name: "PostgreSQL",
       color: "text-blue-600",
       position: "bottom-[20%] left-[12%]",
@@ -174,7 +167,7 @@ export default function TechLogosEnhanced() {
       category: "Database",
     },
     {
-      emoji: "🍃",
+      logo: "/logos/mongodb.png",
       name: "MongoDB",
       color: "text-green-600",
       position: "bottom-[18%] right-[8%]",
@@ -182,7 +175,7 @@ export default function TechLogosEnhanced() {
       category: "Database",
     },
     {
-      emoji: "🔴",
+      logo: "/logos/redis.png",
       name: "Redis",
       color: "text-red-600",
       position: "bottom-[15%] left-[25%]",
@@ -190,7 +183,7 @@ export default function TechLogosEnhanced() {
       category: "Database",
     },
     {
-      emoji: "🐬",
+      logo: "/logos/mysql.png",
       name: "MySQL",
       color: "text-blue-500",
       position: "bottom-[22%] right-[25%]",
@@ -200,7 +193,7 @@ export default function TechLogosEnhanced() {
 
     // Practices
     {
-      emoji: "🔄",
+      logo: "/logos/agile.png",
       name: "Agile/Scrum",
       color: "text-purple-500",
       position: "bottom-[12%] left-[15%]",
@@ -208,7 +201,7 @@ export default function TechLogosEnhanced() {
       category: "Practice",
     },
     {
-      emoji: "📊",
+      logo: "/logos/abtest.png",
       name: "A/B Testing",
       color: "text-pink-400",
       position: "bottom-[10%] right-[15%]",
@@ -226,10 +219,20 @@ export default function TechLogosEnhanced() {
           style={{ animationDelay: logo.delay }}
         >
           <div className="glass-strong p-3 rounded-xl border-2 border-orange-500/20 hover:border-orange-500/70 hover:scale-125 transition-all duration-300 glow-hover cursor-pointer group backdrop-blur-xl shadow-xl">
-            <div
-              className={`text-4xl ${logo.color} group-hover:scale-110 transition-transform drop-shadow-lg`}
-            >
-              {logo.emoji}
+            {/* Logo Image */}
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img
+                src={logo.logo}
+                alt={logo.name}
+                className="w-full h-full object-contain group-hover:scale-110 transition-transform drop-shadow-lg"
+                onError={(e) => {
+                  // Fallback to colored placeholder if logo doesn't exist
+                  e.currentTarget.src =
+                    'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><rect fill="%23ff6b35" width="50" height="50" rx="8"/><text x="25" y="32" text-anchor="middle" fill="white" font-size="16" font-weight="bold">' +
+                    logo.name.substring(0, 2) +
+                    "</text></svg>";
+                }}
+              />
             </div>
 
             {/* Tooltip with name and category */}

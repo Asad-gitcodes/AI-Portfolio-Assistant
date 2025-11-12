@@ -140,30 +140,60 @@ export default function Home() {
             </div>
 
             {/* Avatar/Character Section */}
-            <div className="flex-1 relative w-full max-w-sm lg:max-w-md">
-              <div className="relative w-full mx-auto">
+            <div className="flex-1 relative w-full max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto lg:mx-0">
+              <div className="relative w-full">
                 {/* Animated background glow */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-full blur-3xl animate-pulse-glow"></div>
 
                 {/* Avatar placeholder */}
                 <div className="relative z-10 flex items-center justify-center">
-                  {/* Tech icons floating around - hidden on small mobile */}
-                  <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 text-3xl md:text-5xl animate-float opacity-80 hidden sm:block">
-                    <div className="glass p-2 md:p-3 rounded-xl md:rounded-2xl border border-orange-500/30">
-                      ⚡
+                  {/* Tech icons floating around - with real logos */}
+
+                  {/* Lightning/Speed Icon - Top Left */}
+                  <div className="absolute -top-4 sm:-top-6 md:-top-10 -left-4 sm:-left-6 md:-left-10 animate-float opacity-80 hidden sm:block">
+                    <div className="glass p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl md:rounded-2xl border border-orange-500/30 w-10 sm:w-12 md:w-16 h-10 sm:h-12 md:h-16 flex items-center justify-center bg-gradient-to-br from-orange-500/10 to-red-600/10">
+                      <img
+                        src="/logos/React.png"
+                        alt="Speed"
+                        className="w-6 sm:w-7 md:w-10 h-6 sm:h-7 md:h-10 object-contain"
+                        onError={(e) => {
+                          e.currentTarget.src =
+                            'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23fb923c"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>';
+                        }}
+                      />
                     </div>
                   </div>
-                  <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 text-3xl md:text-5xl animate-float-delayed opacity-80 hidden sm:block">
-                    <div className="glass p-2 md:p-3 rounded-xl md:rounded-2xl border border-orange-500/30">
-                      🚀
+
+                  {/* Rocket Icon - Bottom Right */}
+                  <div className="absolute -bottom-4 sm:-bottom-6 md:-bottom-10 -right-4 sm:-right-6 md:-right-10 animate-float-delayed opacity-80 hidden sm:block">
+                    <div className="glass p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl md:rounded-2xl border border-orange-500/30 w-10 sm:w-12 md:w-16 h-10 sm:h-12 md:h-16 flex items-center justify-center bg-gradient-to-br from-orange-500/10 to-red-600/10">
+                      <img
+                        src="/logos/aws.png"
+                        alt="Innovation"
+                        className="w-6 sm:w-7 md:w-10 h-6 sm:h-7 md:h-10 object-contain"
+                        onError={(e) => {
+                          e.currentTarget.src =
+                            'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23fb923c"><path d="M12 2c3.9 0 7 3.1 7 7 0 2.4-1.2 4.5-3 5.7V20c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1v-5.3c-1.8-1.2-3-3.3-3-5.7 0-3.9 3.1-7 7-7zm0 2c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5z"/></svg>';
+                        }}
+                      />
                     </div>
                   </div>
+
+                  {/* AI/Bot Icon - Top Right */}
                   <div
-                    className="absolute top-0 right-0 text-2xl md:text-4xl animate-float opacity-80 hidden md:block"
+                    className="absolute top-0 right-0 animate-float opacity-80 hidden md:block"
                     style={{ animationDelay: "1s" }}
                   >
-                    <div className="glass p-2 rounded-xl border border-orange-500/30">
-                      🤖
+                    <div className="glass p-2 rounded-xl border border-orange-500/30 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-orange-500/10 to-red-600/10">
+                      <img
+                        src="/logos/docker.png"
+                        alt="AI"
+                        className="w-8 h-8 object-contain"
+                        onError={(e) => {
+                          e.currentTarget.src =
+                            'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23fb923c"><circle cx="9" cy="9" r="2"/><circle cx="15" cy="9" r="2"/><path d="M12 17c2.2 0 4-1.3 4-3h-8c0 1.7 1.8 3 4 3z"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/></svg>';
+                        }}
+                      />
                     </div>
                   </div>
 
