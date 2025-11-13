@@ -1,183 +1,329 @@
 {
   "personal": {
     "name": "Asad Abdul",
-    "title": "Full-Stack Software Engineer",
-    "tagline": "Building scalable web applications with proven impact",
-    "bio": "Full-Stack Software Engineer (M.S. Computer Science) specializing in React.js, Node.js, Python, and AWS cloud infrastructure. 3+ years building scalable web applications with proven impact: 27% error reduction, 99.94% uptime, 60% faster reporting. Featured in CSUF research news for developing machine learning models to manage public disasters and health emergencies on NSF-funded project.",
-    "location": "California, USA",
+    "title": "Full Stack Software Engineer",
+    "tagline": "Building scalable distributed systems with proven impact - 15,000+ users, 99.94% uptime",
+    "bio": "Full Stack Software Engineer with 3+ years building scalable distributed systems across frontend (React, Next.js, TypeScript) and backend (Node.js, Python, RESTful APIs, microservices). Delivered 5+ production applications serving 15,000+ users with 99.94% uptime. Published researcher in machine learning for emergency response systems, featured in university news for contributions to NSF-funded disaster preparedness platform. Expert in designing large-scale system architecture, cross-functional collaboration with globally distributed teams, and rapidly prototyping solutions in ambiguous environments. NVIDIA-certified in RAG/LLM integration. Master's degree in Computer Science.",
+    "location": "Los Angeles, CA",
+    "phone": "657-681-6041",
     "yearsOfExperience": 3,
-    "currentRole": "Full-Stack Software Engineer",
+    "currentRole": "Full Stack Software Engineer at Patientxpress",
     "availability": "Open to new opportunities",
     "preferredRoles": [
-      "Full-Stack Engineer",
+      "Full Stack Engineer",
       "Software Engineer",
       "Backend Engineer",
+      "Distributed Systems Engineer",
       "AI/ML Engineer"
     ]
   },
   
   "contact": {
-    "email": "asad.abdul@example.com",
+    "email": "asadabdul.aj@gmail.com",
+    "phone": "657-681-6041",
     "linkedin": "https://linkedin.com/in/asad-abdul",
     "github": "https://github.com/asad-abdul",
     "portfolio": "https://asad-abdul.vercel.app"
   },
   
   "skills": {
-    "programming": [
+    "languages": [
       {
         "name": "JavaScript/TypeScript",
         "proficiency": "Expert",
         "yearsOfExperience": 3,
-        "description": "Full-stack development with React.js, Node.js, and modern frameworks"
+        "description": "Full-stack development with React.js, Next.js, Node.js, and modern frameworks"
       },
       {
         "name": "Python",
         "proficiency": "Advanced",
         "yearsOfExperience": 3,
-        "description": "Backend development, machine learning, and data processing"
-      },
-      {
-        "name": "React.js",
-        "proficiency": "Expert",
-        "yearsOfExperience": 3,
-        "description": "Building modern, responsive web applications"
+        "description": "Backend development, machine learning, ETL pipelines, and data processing"
       },
       {
         "name": "Node.js",
+        "proficiency": "Expert",
+        "yearsOfExperience": 3,
+        "description": "Backend APIs, microservices, and server-side applications"
+      },
+      {
+        "name": "Go (Golang)",
+        "proficiency": "Advanced",
+        "yearsOfExperience": 1,
+        "description": "Distributed systems, rate limiting, and high-performance backends"
+      },
+      {
+        "name": "SQL",
         "proficiency": "Advanced",
         "yearsOfExperience": 3,
-        "description": "Backend APIs and server-side applications"
+        "description": "PostgreSQL, MySQL database design and optimization"
+      },
+      {
+        "name": "HTML5/CSS3",
+        "proficiency": "Expert",
+        "yearsOfExperience": 3,
+        "description": "Modern web development and responsive design"
+      }
+    ],
+    
+    "backendArchitecture": [
+      {
+        "category": "Backend & Microservices",
+        "technologies": [
+          "Node.js",
+          "Express.js",
+          "RESTful APIs",
+          "Microservices",
+          "Webhooks",
+          "Event-driven architecture"
+        ],
+        "expertise": [
+          "Distributed systems design",
+          "API architecture handling 50,000+ daily requests",
+          "Real-time data processing",
+          "ETL pipelines",
+          "Sub-200ms latency optimization"
+        ]
+      }
+    ],
+    
+    "frontend": [
+      {
+        "category": "Frontend Development",
+        "technologies": [
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Responsive Design",
+          "WebSockets"
+        ],
+        "expertise": [
+          "Building modern, scalable web applications",
+          "Real-time UI with WebSocket integration",
+          "Component-driven architecture",
+          "Performance optimization"
+        ]
+      }
+    ],
+    
+    "databases": [
+      {
+        "category": "Databases",
+        "technologies": [
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB",
+          "Redis",
+          "Vector databases"
+        ],
+        "expertise": [
+          "Database design and optimization",
+          "Query performance tuning",
+          "Redis caching strategies",
+          "Multi-source data integration"
+        ]
+      }
+    ],
+    
+    "cloudInfrastructure": [
+      {
+        "category": "Cloud & DevOps",
+        "technologies": [
+          "AWS (EC2, S3, Lambda, CloudWatch, CloudFront)",
+          "Docker",
+          "Terraform",
+          "CI/CD",
+          "GitHub Actions"
+        ],
+        "expertise": [
+          "Cloud infrastructure design",
+          "Automated deployment pipelines",
+          "Infrastructure as Code",
+          "Scalable architecture for 100,000+ users",
+          "99.8%+ uptime systems"
+        ]
       }
     ],
     
     "aiMachineLearning": [
       {
-        "category": "Machine Learning",
+        "category": "AI/ML & LLMs",
         "technologies": [
-          "TensorFlow",
-          "Scikit-learn",
-          "Python ML libraries"
-        ],
-        "expertise": [
-          "Disaster management models",
-          "Health emergency prediction",
-          "Data analysis"
-        ]
-      },
-      {
-        "category": "LLM & Generative AI",
-        "technologies": [
+          "GPT-4",
           "OpenAI API",
           "LangChain",
+          "RAG (Retrieval-Augmented Generation)",
           "Vector databases",
-          "RAG systems"
+          "TensorFlow"
         ],
         "expertise": [
-          "Building AI chatbots",
-          "Retrieval-Augmented Generation",
-          "Context-aware AI systems"
+          "Building AI-powered applications",
+          "LLM integration and optimization",
+          "RAG systems implementation",
+          "ML model deployment",
+          "Emergency response prediction models"
         ]
       }
     ],
     
-    "cloudDevOps": [
-      {
-        "category": "Cloud Platforms",
-        "technologies": [
-          "AWS (EC2, S3, Lambda)",
-          "Vercel",
-          "Cloud deployment"
-        ]
-      },
-      {
-        "category": "Databases",
-        "technologies": [
-          "MongoDB",
-          "PostgreSQL",
-          "Vector databases"
-        ]
-      }
-    ],
-    
-    "frameworks": [
-      "Next.js",
-      "React",
-      "Express.js",
-      "FastAPI",
-      "Tailwind CSS"
-    ],
-    
-    "tools": [
-      "Git",
-      "Docker",
-      "VS Code",
-      "Postman",
-      "CI/CD"
+    "practices": [
+      "Agile/Scrum methodology",
+      "System design and architecture",
+      "Scalable distributed systems",
+      "Cross-functional collaboration",
+      "A/B testing",
+      "Test-driven development",
+      "PCI-compliant security"
     ]
   },
   
   "experience": [
     {
-      "company": "California State University, Fullerton",
-      "role": "Research Developer (NSF-Funded Project)",
-      "duration": "2022 - 2024",
-      "location": "Fullerton, CA",
-      "type": "Research",
-      "description": "Developed machine learning models for disaster and health emergency management on NSF-funded project. Featured in CSUF research news.",
-      "responsibilities": [
-        "Built ML models for disaster prediction and management",
-        "Developed health emergency response systems",
-        "Collaborated with research team on NSF-funded project",
-        "Presented findings and deployed production systems"
-      ],
-      "achievements": [
-        "Featured in CSUF research news for innovative ML work",
-        "Successfully deployed disaster management system",
-        "Contributed to NSF-funded research project"
-      ],
-      "technologies": [
-        "Python",
-        "Machine Learning",
-        "TensorFlow",
-        "Data Analysis"
-      ]
-    },
-    {
-      "company": "Various Projects",
-      "role": "Full-Stack Software Engineer",
-      "duration": "2021 - Present",
-      "location": "Remote",
+      "company": "Patientxpress",
+      "role": "Full Stack Software Engineer",
+      "duration": "Jun 2025 - Present",
+      "location": "Los Angeles, CA",
       "type": "Full-time",
-      "description": "Building scalable web applications with proven impact on system reliability and performance.",
+      "description": "Building scalable healthcare applications serving 5,000+ users across distributed facilities. Architecting microservices handling 50,000+ daily API requests with 99.8% uptime.",
       "responsibilities": [
-        "Developed full-stack applications using React.js and Node.js",
-        "Implemented AWS cloud infrastructure for high availability",
-        "Reduced system errors by 27% through optimization",
-        "Achieved 99.94% uptime across production systems",
-        "Improved reporting speed by 60% through efficient design"
+        "Designed and implemented 3 full-stack applications (React + Node.js + PostgreSQL) serving 5,000+ users across distributed healthcare facilities",
+        "Architected microservices backend handling 50,000+ daily API requests with 99.8% uptime and sub-200ms latency",
+        "Built distributed AI financial assistant (Next.js + Node.js/Express + GPT-4 API) with Redis caching layer",
+        "Architected scalable backend for AI call agent system coordinating 500+ daily appointment confirmations",
+        "Designed RESTful API with webhook integrations reducing manual follow-ups 35%",
+        "Led full-stack development of patient portal with real-time OpenDental API synchronization",
+        "Implemented event-driven architecture reducing data entry errors 27% (11%→8%)",
+        "Integrated third-party payment gateway and CRM system with PCI-compliant microservices architecture",
+        "Established CI/CD infrastructure (GitHub Actions + Terraform + AWS) with automated testing"
       ],
       "achievements": [
-        "27% reduction in system errors",
-        "99.94% system uptime maintained",
-        "60% faster reporting systems",
-        "Built scalable applications serving thousands of users"
+        "Reduced manual reporting time 60% (30min→12min) with AI assistant processing 10,000+ monthly queries",
+        "92% user satisfaction rate on AI financial assistant",
+        "Reduced manual follow-ups 35% and improved response rates 12 percentage points",
+        "27% reduction in data entry errors (11%→8%) across distributed healthcare network",
+        "Processes $2M+ in transactions with zero security incidents",
+        "25% lower payment gateway latency (4.2s→3.1s)",
+        "Accelerated release velocity 3x while maintaining 99.8% uptime"
       ],
       "technologies": [
         "React.js",
+        "Next.js",
         "Node.js",
-        "Python",
+        "Express.js",
+        "PostgreSQL",
+        "GPT-4 API",
+        "Redis",
         "AWS",
-        "MongoDB",
-        "PostgreSQL"
+        "Docker",
+        "Terraform",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "company": "CEDDI Lab, California State University, Fullerton",
+      "role": "Full Stack Software Engineer",
+      "duration": "Jan 2024 - May 2025",
+      "location": "Fullerton, CA",
+      "type": "Research",
+      "description": "Led full-stack development for NSF-funded ($172,000 grant) public health disaster response platform serving 10,000+ users. Featured in CSUF research publication for ML work on California wildfire response.",
+      "responsibilities": [
+        "Led full-stack development (React + Next.js + Python backend + PostgreSQL) for NSF-funded public health platform serving 10,000+ users",
+        "Architected scalable infrastructure achieving 99.94% uptime and sub-230ms response times over 15 months",
+        "Designed and implemented machine learning algorithms for emergency resource optimization",
+        "Analyzed population, environmental, and geospatial data to direct resources during disasters",
+        "Architected RESTful APIs integrating TensorFlow ML models with real-time frontend visualizations",
+        "Collaborated with distributed team of data scientists and public health officials across 3 counties",
+        "Built real-time disaster management dashboard processing 1M+ daily data points",
+        "Developed ETL pipeline (Python + PostgreSQL) reducing data refresh time 67% (42min→14min)",
+        "Designed distributed deployment architecture on AWS (S3 + CloudFront + EC2 + Lambda)",
+        "Co-authored research on computational models for disaster response optimization"
+      ],
+      "achievements": [
+        "Featured in CSUF research publication for contributions to emergency response optimization",
+        "Contributed to California wildfire response planning systems",
+        "Delivered epidemic forecasting system with 22% improved accuracy",
+        "Built dashboard from scratch in 4 months serving emergency route optimization",
+        "Collaborated with 6 cross-functional stakeholder groups in ambiguous research environment",
+        "Enabled hourly updates for COVID-19 tracking dashboard used by California Department of Public Health",
+        "Scaled infrastructure to handle 100,000+ monthly users",
+        "Increased release velocity from 3/month to 8/month"
+      ],
+      "technologies": [
+        "React",
+        "Next.js",
+        "Python",
+        "PostgreSQL",
+        "TensorFlow",
+        "Machine Learning",
+        "AWS (S3, CloudFront, EC2, Lambda)",
+        "RESTful APIs",
+        "ETL pipelines"
+      ]
+    },
+    {
+      "company": "Global Spark Tek",
+      "role": "Software Engineer",
+      "duration": "Nov 2022 - Jul 2023",
+      "location": "Remote",
+      "type": "Full-time",
+      "description": "Delivered 8 full-stack features in fast-paced startup environment, improving system performance across the stack with 99% crash-free rate.",
+      "responsibilities": [
+        "Delivered 8 full-stack features (React frontend + Node.js backend) in fast-paced startup environment",
+        "Improved system performance: 32% faster startup time (2.8s→1.9s), 43% lower API response time (420ms→240ms)",
+        "Designed and implemented CI/CD pipeline with GitHub Actions and automated testing",
+        "Collaborated with cross-functional product and engineering team to rapidly prototype solutions",
+        "Maintained code quality through test-driven development",
+        "Handled multiple responsibilities across frontend, backend, and DevOps"
+      ],
+      "achievements": [
+        "99% crash-free rate across production systems",
+        "Reduced build time 45% with automated CI/CD",
+        "Enabled 3x weekly deployments",
+        "Shortened feature delivery cycle from 2 weeks to 5 days",
+        "Successfully navigated high-ambiguity startup environment"
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "GitHub Actions",
+        "CI/CD",
+        "Test-driven development"
       ]
     }
   ],
   
   "projects": [
     {
+      "name": "Real-Time Distributed Chat System",
+      "description": "Architected distributed rate limiting system handling 100,000+ requests/second across multiple regions with sub-10ms latency and 99.99% accuracy.",
+      "role": "Solo Developer",
+      "duration": "2024",
+      "technologies": [
+        "Go (Golang)",
+        "Redis",
+        "PostgreSQL",
+        "React",
+        "WebSockets",
+        "Pub/Sub messaging"
+      ],
+      "highlights": [
+        "Implemented sliding window algorithm with sub-10ms latency and 99.99% accuracy",
+        "Built Redis pub/sub messaging pattern for cross-server communication",
+        "Enabled seamless message delivery across distributed server fleet with guaranteed ordering",
+        "Designed event-driven architecture handling 10,000+ messages/day",
+        "Built real-time analytics dashboard tracking rate limit violations and attack patterns",
+        "Enabled security teams to identify and block DDoS attempts within seconds",
+        "Implemented fault-tolerant system with WebSocket connection pooling and health monitoring",
+        "Designed graceful failover with automatic reconnection and message queue persistence"
+      ],
+      "links": {
+        "github": "https://github.com/asad-abdul/distributed-chat-system"
+      }
+    },
+    {
       "name": "AI Portfolio Assistant",
-      "description": "Production-ready AI assistant that represents me professionally to recruiters, featuring conversational AI, RAG system, and automated lead capture.",
+      "description": "Production-ready AI assistant representing me professionally to recruiters, featuring conversational AI, RAG system, and automated lead capture.",
       "role": "Solo Developer",
       "duration": "2024",
       "technologies": [
@@ -187,38 +333,20 @@
         "MongoDB",
         "Tailwind CSS",
         "RAG",
-        "Vector Embeddings"
+        "Vector Embeddings",
+        "LangChain"
       ],
       "highlights": [
-        "Implemented RAG system for context-aware responses",
+        "Implemented RAG system for context-aware responses about my background",
         "Built real-time chat interface with typing indicators",
         "Automated recruiter lead capture and email notifications",
-        "Deployed on Vercel with high availability"
+        "Deployed on Vercel with high availability",
+        "NVIDIA-certified in RAG/LLM integration techniques"
       ],
       "links": {
-        "live": "https://your-portfolio.vercel.app",
+        "live": "https://asad-abdul.vercel.app",
         "github": "https://github.com/asad-abdul/ai-portfolio"
       }
-    },
-    {
-      "name": "Disaster Management ML System",
-      "description": "Machine learning system for predicting and managing public disasters and health emergencies. NSF-funded research project.",
-      "role": "Lead Developer",
-      "duration": "2022-2024",
-      "technologies": [
-        "Python",
-        "TensorFlow",
-        "Machine Learning",
-        "Data Analysis",
-        "Cloud Deployment"
-      ],
-      "highlights": [
-        "Featured in CSUF research news",
-        "Developed predictive models for disaster management",
-        "Contributed to NSF-funded research",
-        "Deployed production system for emergency response"
-      ],
-      "links": {}
     }
   ],
   
@@ -231,14 +359,16 @@
       "location": "Fullerton, CA",
       "gpa": "3.8/4.0",
       "highlights": [
-        "Participated in NSF-funded research project",
-        "Featured in university research news",
-        "Focused on Machine Learning and Software Engineering"
+        "Participated in NSF-funded research project ($172,000 grant)",
+        "Featured in university research publication for ML disaster management work",
+        "Focused on Machine Learning and Distributed Systems",
+        "Contributed to California wildfire response optimization research"
       ]
     },
     {
-      "institution": "University Name",
+      "institution": "Bachelor's Degree",
       "degree": "Bachelor of Science in Computer Science",
+      "field": "Computer Science",
       "duration": "2017 - 2021",
       "location": "California, USA",
       "gpa": "3.6/4.0"
@@ -247,75 +377,104 @@
   
   "certifications": [
     {
-      "name": "AWS Certified Developer",
-      "issuer": "Amazon Web Services",
-      "year": "2023"
-    },
-    {
-      "name": "Full-Stack Web Development",
-      "issuer": "Online Certification",
-      "year": "2022"
+      "name": "Building RAG Agents with LLMs",
+      "issuer": "NVIDIA",
+      "year": "2024",
+      "description": "Advanced certification in Retrieval-Augmented Generation, LangChain, and vector databases"
     }
   ],
   
   "achievements": [
-    "Featured in CSUF research news for ML disaster management work",
-    "27% reduction in system errors across production applications",
-    "Maintained 99.94% uptime on critical systems",
-    "60% improvement in reporting system performance",
-    "Contributed to NSF-funded research project"
+    "Delivered 5+ production applications serving 15,000+ users with 99.94% uptime",
+    "Featured in CSUF research publication for ML contributions to NSF-funded disaster preparedness platform",
+    "Contributed to California wildfire response optimization systems",
+    "Architected systems handling 50,000+ daily API requests with sub-200ms latency",
+    "Built AI financial assistant reducing manual reporting time 60% (30min→12min)",
+    "Reduced data entry errors 27% (11%→8%) across distributed healthcare network",
+    "Processes $2M+ in transactions with zero security incidents",
+    "Reduced manual follow-ups 35% with AI call agent system",
+    "Developed ETL pipeline reducing data refresh time 67% (42min→14min)",
+    "Scaled infrastructure to handle 100,000+ monthly users",
+    "92% user satisfaction on AI-powered applications",
+    "99% crash-free rate across production systems"
+  ],
+  
+  "publications": [
+    {
+      "title": "Computational Models for Disaster Response Optimization",
+      "venue": "CSUF Research Publication",
+      "year": "2024",
+      "description": "Co-authored research on applying machine learning to real-world emergency scenarios, with focus on California wildfire response planning"
+    }
   ],
   
   "interests": [
+    "Distributed Systems Architecture",
     "Artificial Intelligence and Machine Learning",
     "Large Language Models and RAG systems",
-    "Full-stack web development",
-    "Cloud infrastructure and scalability",
-    "Disaster management technology",
-    "Open source contributions"
+    "Full-stack web development at scale",
+    "Cloud infrastructure and microservices",
+    "Real-time data processing",
+    "Disaster management and emergency response technology",
+    "High-performance backend systems"
   ],
   
   "workPreferences": {
-    "workStyle": "Remote or Hybrid",
+    "workStyle": "Remote, Hybrid, or On-site",
     "preferredIndustries": [
       "Technology",
+      "HealthTech",
       "AI/ML",
       "Software Development",
-      "HealthTech",
-      "Public Safety Tech"
+      "Distributed Systems",
+      "Public Safety Tech",
+      "Fintech"
     ],
     "companySize": "Startup to Enterprise",
-    "willingToRelocate": false,
-    "visaSponsorship": "Not required",
-    "salaryExpectation": "$100K - $150K (negotiable based on role and location)"
+    "willingToRelocate": true,
+    "visaSponsorship": "Not required (US citizen/work authorized)",
+    "salaryExpectation": "$120K - $180K (negotiable based on role, location, and total compensation)"
   },
   
   "faqs": [
     {
       "question": "What's your greatest strength as a software engineer?",
-      "answer": "My ability to deliver measurable impact. I focus on building systems that are not just functional, but demonstrably better - whether that's reducing errors by 27%, achieving 99.94% uptime, or making processes 60% faster. I combine technical excellence with a results-driven mindset."
+      "answer": "My ability to deliver measurable, scalable impact in production systems. I've built applications serving 15,000+ users with 99.94% uptime, reduced manual work by 60%, and processed $2M+ in transactions with zero security incidents. I excel at designing distributed architectures, from microservices handling 50,000+ daily requests to rate-limiting systems processing 100,000+ requests/second. I combine deep technical expertise across the full stack with a results-driven mindset focused on real-world impact."
     },
     {
       "question": "Tell me about your ML/AI experience",
-      "answer": "I worked on an NSF-funded research project at CSUF developing machine learning models for disaster and health emergency management. This work was featured in university research news. I'm also experienced with modern LLMs, RAG systems, and building AI-powered applications like this portfolio assistant."
+      "answer": "I have both research and production AI/ML experience. At CSUF, I worked on an NSF-funded project ($172,000 grant) developing machine learning models for disaster and health emergency management—work that was featured in university research publications and contributed to California wildfire response systems. On the production side, I've built AI-powered applications using GPT-4, LangChain, and RAG systems, including a financial assistant that reduced manual reporting time 60% and achieved 92% user satisfaction while processing 10,000+ monthly queries. I'm NVIDIA-certified in building RAG agents with LLMs."
     },
     {
       "question": "What type of role are you looking for?",
-      "answer": "I'm looking for a full-stack or backend engineering role where I can leverage my experience in React.js, Node.js, Python, and AWS. I'm particularly excited about positions involving AI/ML integration or working on systems with high scale and reliability requirements."
+      "answer": "I'm looking for a full-stack or backend engineering role where I can leverage my experience building distributed systems at scale. I'm particularly excited about positions involving AI/ML integration, microservices architecture, real-time data processing, or systems serving large user bases with high reliability requirements. I thrive in environments that value measurable impact, whether that's startup velocity or enterprise-scale infrastructure."
+    },
+    {
+      "question": "Can you describe your experience with distributed systems?",
+      "answer": "I have hands-on experience designing and building distributed systems from scratch. At Patientxpress, I architected microservices handling 50,000+ daily requests with 99.8% uptime and sub-200ms latency. I've built distributed AI systems coordinating 500+ daily operations across multiple clinics, implemented event-driven architectures, and designed RESTful APIs with webhook integrations. In my personal projects, I built a distributed rate-limiting system in Go + Redis handling 100,000+ requests/second across multiple regions with sub-10ms latency. I also have experience with Redis pub/sub for cross-server communication and fault-tolerant systems with graceful failover."
+    },
+    {
+      "question": "How do you ensure system reliability and performance?",
+      "answer": "I approach reliability through multiple layers: infrastructure design (CI/CD with automated testing, feature flags, multi-environment deployments), architecture patterns (microservices, event-driven design, Redis caching), monitoring (CloudWatch, real-time analytics dashboards), and database optimization (query tuning, indexing strategies). My track record shows this works—I've maintained 99.94% uptime on systems serving 10,000+ users, 99.8% uptime on microservices handling 50,000+ daily requests, and achieved 99% crash-free rates. I also implement comprehensive error handling and design for graceful degradation during failures."
+    },
+    {
+      "question": "What's your experience working in cross-functional teams?",
+      "answer": "I've successfully collaborated with diverse teams in various environments. At CEDDI Lab, I worked with data scientists, public health officials, and geography researchers across 3 counties, navigating an ambiguous research environment with 6 cross-functional stakeholder groups. At Patientxpress, I coordinate with product, engineering, and healthcare operations teams. At Global Spark Tek, I rapidly prototyped solutions in a startup environment with shifting priorities while wearing multiple hats across frontend, backend, and DevOps. I'm comfortable with Agile/Scrum methodologies and pride myself on clear communication and ability to translate technical concepts for non-technical stakeholders."
+    },
+    {
+      "question": "Tell me about a challenging technical problem you solved",
+      "answer": "At CEDDI Lab, I needed to enable hourly updates for a COVID-19 tracking dashboard used by the California Department of Public Health, but our ETL pipeline was taking 42 minutes to refresh. I redesigned the entire pipeline, optimizing database queries for multi-source data integration (population, environmental, geospatial), implementing parallel processing, and adding incremental updates instead of full refreshes. The result was a 67% reduction in refresh time (42min→14min), enabling hourly updates and making the dashboard much more valuable for real-time decision-making during the pandemic. This required deep understanding of PostgreSQL optimization, Python async processing, and careful coordination with the data science team."
     },
     {
       "question": "Are you open to remote work?",
-      "answer": "Yes! I'm open to remote, hybrid, or on-site positions. I've successfully worked remotely and have strong communication and collaboration skills in distributed teams."
-    },
-    {
-      "question": "What's your experience with Agile/Scrum?",
-      "answer": "I'm a strong collaborator in Agile/Scrum teams with experience in sprint planning, stand-ups, and iterative development. I value clear communication, rapid feedback loops, and the ability to adapt quickly to changing requirements."
+      "answer": "Yes! I'm open to remote, hybrid, or on-site positions. I've successfully worked remotely at Global Spark Tek and have strong experience with distributed team collaboration, asynchronous communication, and self-management. I'm also willing to relocate for the right opportunity."
     }
   ],
   
   "metadata": {
-    "lastUpdated": "2024-11-12",
-    "version": "1.0",
-    "visibility": "public"
+    "lastUpdated": "2025-11-13",
+    "version": "2.0",
+    "visibility": "public",
+    "resumeSource": "Actual resume dated 2024-2025"
   }
 }
