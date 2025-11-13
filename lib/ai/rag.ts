@@ -8,7 +8,7 @@ import profileData from '@/data/profile.json';
 /**
  * Prepare profile data into searchable text chunks (with safe array handling)
  */
-export function prepareProfileChunks(profile: Profile): string[] {
+export function prepareProfileChunks(profile: any): string[] {
   const chunks: string[] = [];
 
   // Helper function to safely join arrays
@@ -23,49 +23,91 @@ export function prepareProfileChunks(profile: Profile): string[] {
     );
   }
 
-  // Skills - Programming
-  if (profile.skills?.programming && Array.isArray(profile.skills.programming)) {
-    profile.skills.programming.forEach(skill => {
+  // Skills - Languages
+  if (profile.skills?.languages && Array.isArray(profile.skills.languages)) {
+    profile.skills.languages.forEach((skill: any) => {
       chunks.push(
         `${skill.name}: ${skill.proficiency} level with ${skill.yearsOfExperience} years of experience. ${skill.description}`
       );
     });
   }
 
-  // Skills - AI/ML
-  if (profile.skills?.aiMachineLearning && Array.isArray(profile.skills.aiMachineLearning)) {
-    profile.skills.aiMachineLearning.forEach(category => {
+  // Skills - Backend Architecture
+  if (profile.skills?.backendArchitecture && Array.isArray(profile.skills.backendArchitecture)) {
+    profile.skills.backendArchitecture.forEach((category: any) => {
       const technologies = safeJoin(category.technologies);
       const expertise = safeJoin(category.expertise);
       if (technologies || expertise) {
         chunks.push(
-          `${category.category} expertise: ${technologies}. Specializing in: ${expertise}`
+          `${category.category}: ${technologies}. Expertise: ${expertise}`
         );
       }
     });
   }
 
-  // Skills - Cloud & DevOps
-  if (profile.skills?.cloudDevOps && Array.isArray(profile.skills.cloudDevOps)) {
-    profile.skills.cloudDevOps.forEach(category => {
+  // Skills - Frontend
+  if (profile.skills?.frontend && Array.isArray(profile.skills.frontend)) {
+    profile.skills.frontend.forEach((category: any) => {
       const technologies = safeJoin(category.technologies);
-      if (technologies) {
-        chunks.push(`${category.category}: ${technologies}`);
+      const expertise = safeJoin(category.expertise);
+      if (technologies || expertise) {
+        chunks.push(
+          `${category.category}: ${technologies}. Expertise: ${expertise}`
+        );
       }
     });
   }
 
-  // Skills - Frameworks
-  if (profile.skills?.frameworks && Array.isArray(profile.skills.frameworks)) {
-    const frameworks = safeJoin(profile.skills.frameworks);
-    if (frameworks) {
-      chunks.push(`Frameworks and libraries: ${frameworks}`);
+  // Skills - Databases
+  if (profile.skills?.databases && Array.isArray(profile.skills.databases)) {
+    profile.skills.databases.forEach((category: any) => {
+      const technologies = safeJoin(category.technologies);
+      const expertise = safeJoin(category.expertise);
+      if (technologies || expertise) {
+        chunks.push(
+          `${category.category}: ${technologies}. Expertise: ${expertise}`
+        );
+      }
+    });
+  }
+
+  // Skills - Cloud Infrastructure
+  if (profile.skills?.cloudInfrastructure && Array.isArray(profile.skills.cloudInfrastructure)) {
+    profile.skills.cloudInfrastructure.forEach((category: any) => {
+      const technologies = safeJoin(category.technologies);
+      const expertise = safeJoin(category.expertise);
+      if (technologies || expertise) {
+        chunks.push(
+          `${category.category}: ${technologies}. Expertise: ${expertise}`
+        );
+      }
+    });
+  }
+
+  // Skills - AI/ML
+  if (profile.skills?.aiMachineLearning && Array.isArray(profile.skills.aiMachineLearning)) {
+    profile.skills.aiMachineLearning.forEach((category: any) => {
+      const technologies = safeJoin(category.technologies);
+      const expertise = safeJoin(category.expertise);
+      if (technologies || expertise) {
+        chunks.push(
+          `${category.category}: ${technologies}. Expertise: ${expertise}`
+        );
+      }
+    });
+  }
+
+  // Skills - Practices
+  if (profile.skills?.practices && Array.isArray(profile.skills.practices)) {
+    const practices = safeJoin(profile.skills.practices);
+    if (practices) {
+      chunks.push(`Development practices: ${practices}`);
     }
   }
 
   // Experience
   if (profile.experience && Array.isArray(profile.experience)) {
-    profile.experience.forEach(exp => {
+    profile.experience.forEach((exp: any) => {
       const achievements = safeJoin(exp.achievements, '. ');
       const technologies = safeJoin(exp.technologies);
       chunks.push(
@@ -76,7 +118,7 @@ export function prepareProfileChunks(profile: Profile): string[] {
 
   // Projects
   if (profile.projects && Array.isArray(profile.projects)) {
-    profile.projects.forEach(project => {
+    profile.projects.forEach((project: any) => {
       const technologies = safeJoin(project.technologies);
       const highlights = safeJoin(project.highlights, '. ');
       chunks.push(
@@ -87,7 +129,7 @@ export function prepareProfileChunks(profile: Profile): string[] {
 
   // Education
   if (profile.education && Array.isArray(profile.education)) {
-    profile.education.forEach(edu => {
+    profile.education.forEach((edu: any) => {
       const highlights = safeJoin(edu.highlights, '. ');
       chunks.push(
         `${edu.degree} from ${edu.institution} (${edu.duration}). ${highlights}`
@@ -97,7 +139,7 @@ export function prepareProfileChunks(profile: Profile): string[] {
 
   // Certifications
   if (profile.certifications && Array.isArray(profile.certifications)) {
-    profile.certifications.forEach(cert => {
+    profile.certifications.forEach((cert: any) => {
       chunks.push(
         `Certification: ${cert.name} from ${cert.issuer} (${cert.year})`
       );
@@ -106,7 +148,7 @@ export function prepareProfileChunks(profile: Profile): string[] {
 
   // FAQs
   if (profile.faqs && Array.isArray(profile.faqs)) {
-    profile.faqs.forEach(faq => {
+    profile.faqs.forEach((faq: any) => {
       chunks.push(`Q: ${faq.question} A: ${faq.answer}`);
     });
   }
@@ -146,7 +188,7 @@ export async function generateProfileEmbeddings(): Promise<void> {
   try {
     console.log('📄 Generating profile embeddings...');
     
-    const profile = profileData as Profile;
+    const profile = profileData;
     const chunks = prepareProfileChunks(profile);
     
     if (chunks.length === 0) {
@@ -254,7 +296,7 @@ export function buildContextString(results: RetrievalResult[]): string {
  * Create a system prompt with retrieved context
  */
 export function createSystemPrompt(context: string): string {
-  const profile = profileData as Profile;
+  const profile: any = profileData;
   
   return `You are an AI assistant representing ${profile.personal.name}, a ${profile.personal.title}.
 
