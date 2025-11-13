@@ -24,61 +24,72 @@ export default function SimpleSummary() {
             {/* Summary Text */}
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">
               <span className="text-white font-semibold">
-                Full-Stack Software Engineer
+                Full Stack Software Engineer
               </span>{" "}
               <span className="text-orange-400 font-medium">
                 (M.S. Computer Science)
               </span>{" "}
-              specializing in{" "}
+              with <span className="text-white font-semibold">3+ years</span>{" "}
+              building{" "}
               <span className="text-orange-400 font-medium">
-                React.js, Node.js, Python
-              </span>
-              , and{" "}
+                scalable distributed systems
+              </span>{" "}
+              across{" "}
               <span className="text-orange-400 font-medium">
-                AWS cloud infrastructure
+                React, Next.js, TypeScript
+              </span>{" "}
+              and{" "}
+              <span className="text-orange-400 font-medium">
+                Node.js, Python, RESTful APIs, microservices
               </span>
-              . <span className="text-white font-semibold">3+ years</span>{" "}
-              building scalable web applications with proven impact:{" "}
+              . Delivered{" "}
               <span className="text-orange-400 font-semibold">
-                27% error reduction
-              </span>
-              ,{" "}
+                5+ production applications
+              </span>{" "}
+              serving{" "}
+              <span className="text-orange-400 font-semibold">
+                15,000+ users
+              </span>{" "}
+              with{" "}
               <span className="text-orange-400 font-semibold">
                 99.94% uptime
               </span>
-              ,{" "}
-              <span className="text-orange-400 font-semibold">
-                60% faster reporting
-              </span>
               .
             </p>
 
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-              Featured in{" "}
-              <span className="text-white font-medium">CSUF research news</span>{" "}
-              for developing{" "}
-              <span className="text-orange-400 font-medium">
-                machine learning models
+              <span className="text-white font-medium">
+                Published researcher
               </span>{" "}
-              to manage public disasters and health emergencies on{" "}
-              <span className="text-white font-medium">NSF-funded project</span>
-              . Experienced with{" "}
-              <span className="text-orange-400 font-medium">
-                large language models, LangChain framework
+              in machine learning for emergency response systems, featured in{" "}
+              <span className="text-white font-medium">university news</span>{" "}
+              for contributions to{" "}
+              <span className="text-white font-medium">
+                NSF-funded disaster preparedness platform
               </span>
-              , and{" "}
+              .{" "}
               <span className="text-orange-400 font-medium">
-                vector databases
-              </span>
-              .
+                NVIDIA-certified
+              </span>{" "}
+              in{" "}
+              <span className="text-orange-400 font-medium">
+                RAG/LLM integration
+              </span>{" "}
+              with expertise in large-scale system architecture.
             </p>
 
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-              Strong collaborator in{" "}
-              <span className="text-white font-medium">Agile/Scrum teams</span>{" "}
-              with ability to{" "}
+              Expert in{" "}
               <span className="text-orange-400 font-medium">
-                rapidly learn new technologies
+                cross-functional collaboration
+              </span>{" "}
+              with{" "}
+              <span className="text-white font-medium">
+                globally distributed teams
+              </span>{" "}
+              and{" "}
+              <span className="text-orange-400 font-medium">
+                rapidly prototyping solutions in ambiguous environments
               </span>
               . Seeking to apply technical expertise to advance innovative
               solutions.
@@ -108,10 +119,10 @@ export default function SimpleSummary() {
         {/* Quick Stats - Optional highlight */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 pt-4">
           {[
-            { value: "3+", label: "Years Exp." },
-            { value: "99.94%", label: "Uptime" },
-            { value: "60%", label: "Faster" },
-            { value: "NSF", label: "Funded" },
+            { value: "3+", label: "Years Experience" },
+            { value: "5+", label: "Prod Apps" },
+            { value: "NSF", label: "Funded Research" },
+            { value: "NVIDIA", label: "Certified" },
           ].map((stat, index) => (
             <div
               key={index}

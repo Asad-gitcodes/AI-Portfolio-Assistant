@@ -7,6 +7,7 @@ import SimpleSummary from "@/components/summary/SimpleSummary";
 import CompactSkillsShowcase from "@/components/skills/CompactSkillsShowcase";
 import ExperienceTimeline from "@/components/experience/ExperienceTimeline";
 import CertificationsSection from "@/components/certifications/CertificationsSection";
+import AchievementsSection from "@/components/achievements/AchievementsSection";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
 import ContactSection from "@/components/contact/ContactSection";
 //import FloatingTechLogos from "@/components/ui/FloatingTechLogos";
@@ -238,10 +239,20 @@ export default function Home() {
           </div>
         </ScrollSection>
 
-        {/* Certifications - Appears on scroll */}
+        {/* Certifications & Achievements Side by Side - Appears on scroll */}
         <ScrollSection delay={0}>
           <div className="mt-12 md:mt-20">
-            <CertificationsSection />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+              {/* Certifications */}
+              <div>
+                <CertificationsSection />
+              </div>
+
+              {/* Achievements */}
+              <div>
+                <AchievementsSection />
+              </div>
+            </div>
           </div>
         </ScrollSection>
 
